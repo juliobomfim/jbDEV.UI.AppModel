@@ -1,9 +1,34 @@
 ﻿<html>
 <body>
     <header>
-        Menu
+        <nav class="navbar navbar-expand-sm navbar-light border-bottom mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AppModel</a>
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target=".navbar-collapse" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sn-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-new flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-@RenderBody()
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
     <footer>
         Rodapé
     </footer>
