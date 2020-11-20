@@ -1,22 +1,38 @@
 ﻿<html>
+<head>
+    <title>@ViewData["Title"] - App Model</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.3/css/bootstrap.min.css"
+              asp-fallback-href="~lib/bootstrap/css/bootstrap.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha256=eSi1q2PG637g7ib17yAaWMcrr5grtohYChqibrV7PBE="/>
+    </environment>
+
+</head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light border-bottom mb-3">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AppModel</a>
-                <button class="navbar-toggler" 
-                        type="button" 
-                        data-toggle="collapse" 
-                        data-target=".navbar-collapse" 
-                        aria-controls="navbarSupportedContent" 
-                        aria-expanded="false" 
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sn-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-new flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> 
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                     </ul>
                 </div>
@@ -29,8 +45,12 @@
             @RenderBody()
         </main>
     </div>
-    <footer>
-        Rodapé
+    <footer class="border-top footer text-muted">
+        <div class="container">Rodapé</div>
     </footer>
+    <environment include="Development">
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    </environment>
 </body>
 </html>

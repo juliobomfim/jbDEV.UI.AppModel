@@ -28,7 +28,7 @@ namespace jbDEV.UI.Site
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseMvc(routes => 
             {
                 routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
