@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.TaskRunnerExplorer.14.0" Version="14.0.0" />
   </ItemGroup>
 
 </Project>
