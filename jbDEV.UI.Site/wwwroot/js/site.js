@@ -1,3 +1,3 @@
-﻿$(document).ready(function (){
-    alert("Inicialização!");
-});
+﻿//$(document).ready(function (){
+//    alert("Inicialização!");
+//});
