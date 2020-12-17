@@ -1,1 +1,5 @@
-﻿Hello Worlds!!
+﻿@using jbDEV.UI.Site.Data  
+@inject IPedidoRep PedidoRep; 
+<!-- Estudo de injeção de dependencia direto na model (Não recomendado) -->
+<br/>
+@PedidoRep.ObterPedido().Id

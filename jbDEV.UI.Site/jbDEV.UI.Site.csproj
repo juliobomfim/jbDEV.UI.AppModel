@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,7 +9,6 @@
     <Folder Include="Modulos\Vendas\Models\" />
     <Folder Include="Modulos\Produtos\Data\" />
     <Folder Include="Modulos\Produtos\Models\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
